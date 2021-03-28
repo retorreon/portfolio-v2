@@ -1,0 +1,231 @@
+/* --- =media queries --- */
+@media all and (max-width: 420px) {
+  header nav {
+    flex-direction: row;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media all and (min-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+
+  header h1 {
+    margin: 14px;
+    padding-top:0;
+  }
+
+  header nav {
+    margin-top: 8px;
+  }
+
+  header nav ul li a:hover {
+    color: #bdbdbd;
+  }
+  
+}
+
+
+/* --- =header and nav bar --- */
+
+header {
+	background-color: #302F4D;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+  font-family: "Roboto";
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
+header h1 {
+  font-size: 48px;
+  margin: 14px 0;
+  padding-top: 0;
+}
+
+header nav {
+  margin-top: 8px;
+}
+header nav ul li a:hover {
+  color: #bdbdbd;
+}
+
+header h1 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+  font-size: 48px;
+  font-family: "Roboto"
+}
+
+/* --- =main page structure --- */
+
+main {
+  background-color: #D9FFF5;
+  padding-top: 50px;
+}
+
+footer {
+  display: flex;
+  background-color: #302F4D;
+  padding: 20px;
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  flex: 1;
+  margin: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* ----- =text ----- */
+.roboto {
+  font-family: "Roboto";
+}
+
+.roboto-thin {
+  font-family: "Roboto Thin";
+}
+
+/* ----- =color theme ----- */
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+}
+
+.prussian-blue {
+  color: #5E807F;
+}
+
+.dark-blue {
+  color: #302F4D;
+}
+
+.teal {
+  color: #D9FFF5;
+}
+
+/* ----- = header font sizes ----- */
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+
+/* ----- =body text, list text and footer text  ----- */
+
+main p, li {
+  color:black;
+  font-family: "Roboto", "sans-serif";
+  font-size: 18px;
+}
+
+footer p {
+  color: white;
+  font-family: "Roboto";
+  font-size: 10px;
+}
+
+
+/* ----- =links and buttons ----- */
+
+.cta {
+  font-family: Roboto;
+  size: 14px;
+  color: white;
+}
+
+.button {
+	border: 1px #8f99a4 solid;
+	background-color: #302F4D;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+a, a href{  
+  font-family: Roboto;
+  size: 14px;
+}
+
+header.a:link    { color: whitesmoke;  };
+header.a:visited { color: white;   };
+header.a:hover   { color: #F08943; };
+header.a:active  { color: #302F4D;  }
+
+
+/* Contact Form Design */
+
+form {
+  width:100%;
+  padding-right: 8px;
+  /* Fixed small sizing issue on the right */
+  color: black;
+}
+
+form label {
+  display: block;
+  font-family: "Roboto";
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+  color:#5E807F;
+}
